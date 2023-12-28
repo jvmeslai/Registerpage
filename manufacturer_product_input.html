@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Information Input</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .product-input-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    text-align: center;
+  }
+  h2 {
+    color: #005b96;
+  }
+  .input-group {
+    margin: 20px 0;
+  }
+  .input-group input, .input-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .input-group input[type="submit"] {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .input-group input[type="submit"]:hover {
+    background-color: #005f73;
+  }
+</style>
+</head>
+<body>
+  <div class="product-input-container">
+    <h2>Product Information Input</h2>
+    <form action="registration_complete.html" method="post">
+      <!-- Manufacturer List (Placeholder for demonstration) -->
+      <div class="input-group">
+        <label>Current Company:</label>
+        <label>Macy</label>
+      </div>
+      <div class="input-group">
+    <label for="product-status">Operation:</label>
+    <select id="product-status" name="product-status">
+      <option value="buy">Buy</option>
+      <option value="sell">Sell</option>
+      <option value="sell-to-consumer">Sell to Consumer</option>
+    </select>
+  </div>
+  <div class="input-group">
+  
+    <input type="text" id="order-id" name="order-id" placeholder="Order ID">
+  </div>
+         <div class="input-group">
+        <input type="text" name="product-code" placeholder="Product Code">
+      </div>
+      <div class="input-group">
+
+    <input type="date" id="registration-date" name="registration-date">
+  </div>
+  <div class="input-group">
+
+    <input type="time" id="registration-time" name="registration-time">
+  </div>
+ 
+
+
+      <div class="input-group">
+        <input type="number" name="quantity" placeholder="Quantity">
+      </div>
+      <div class="input-group">
+        <input type="text" name="buyer" placeholder="Buyer Information">
+      </div>
+      <div class="input-group">
+        <input type="text" name="seller" placeholder="Seller Information">
+      </div>
+      <div class="input-group">
+        <a href="registration_complete.html">
+        <input type="submit" value="Register Product"></a>
+
+      </div>
+    
+  
+  
+
+  
+</form>
+  </div>
+</body>
+</html>

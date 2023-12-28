@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Manufacturer Login</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+  }
+  h2 {
+    color: #005b96;
+  }
+  .input-group {
+    margin: 20px 0;
+  }
+  .input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .input-group input[type="submit"] {
+    background-color: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .input-group input[type="submit"]:hover {
+    background-color: #005f73;
+  }
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Manufacturer Login</h2>
+    <form action="manufacturer_product_input.html">
+      <div class="input-group">
+        <input type="text" name="username" placeholder="Username">
+      </div>
+      <div class="input-group">
+        <input type="password" name="password" placeholder="Password">
+      </div>
+      <div class="input-group">
+        <input type="submit" value="Login">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
